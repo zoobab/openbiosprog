@@ -1,0 +1,84 @@
+##
+## This file is part of the openlpcprog project.
+##
+## Copyright (C) 2009 Uwe Hermann <uwe@hermann-uwe.de>
+##
+## This program is free software; you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation; either version 2 of the License, or
+## (at your option) any later version.
+##
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with this program; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+##
+
+[options]
+wordswap=yes
+rotate_labels=yes
+sort_labels=no
+generate_pinseq=yes
+sym_width=2400
+pinwidthvertical=200
+pinwidthhorizontal=200
+
+[geda_attr]
+version=20060113 1
+name=PLCC32
+device=PLCC32
+refdes=IC?
+footprint=PLCC32
+description=PLCC32 socket for LPC BIOS chips
+documentation=TODO
+author=Uwe Hermann <uwe@hermann-uwe.de>
+dist-license=GPL
+use-license=unlimited
+numslots=0
+#slot=1
+#slotdef=1:
+#comment=
+
+[pins]
+#pinnr	seq	type	style	posit.	net	label
+
+4		io	line	t		GPI2
+3		io	line	t		GPI3
+2		io	line	t		RST#
+1		io	line	t		NC
+32		io	line	t		VCC
+31		io	line	t		CLK
+30		io	line	t		GPI4
+
+5		io	line	l		GPI1
+6		io	line	l		GPI0
+7		io	line	l		WP#
+8		io	line	l		TBL#
+9		io	line	l		RES
+10		io	line	l		RES
+11		io	line	l		RES
+12		io	line	l		RES
+13		io	line	l		LAD0
+
+14		io	line	b		LAD1
+15		io	line	b		LAD2
+16		io	line	b		GND
+17		io	line	b		LAD3
+18		io	line	b		RES
+19		io	line	b		RES
+20		io	line	b		RES
+
+21		io	line	r		RES
+22		io	line	r		NC
+23		io	line	r		LFRAME#
+24		io	line	r		INIT#
+25		io	line	r		VCC
+26		io	line	r		NC
+27		io	line	r		NC
+28		io	line	r		GND
+29		io	line	r		IC
+
