@@ -1,0 +1,16 @@
+------------------------------------------------------------------------------
+README
+------------------------------------------------------------------------------
+
+The openlpcprog project aims to create Open Hardware and Free Software
+Low-Pin Count (LPC) BIOS chip programmer.
+
+License
+-------
+
+Schematics and PCB layouts are released under the CC-BY-SA 3.0 license.
+
+The software is part of the flashrom project, which is licensed under the
+GNU General Public license, version 2 or later (partly version 2 only).
+See http://www.coreboot.org/Flashrom for details.
+
