@@ -18,13 +18,37 @@
 ## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 ##
 
-GENERATED_SYMBOLS = stm32f103xx_lqfp48.sym usbconn_pads.sym
+# Template file for creating symbols with tragesym.
 
-all: $(GENERATED_SYMBOLS)
+[options]
+wordswap=yes
+rotate_labels=no
+sort_labels=no
+generate_pinseq=yes
+sym_width=800
+pinwidthvertical=400
+pinwidthhorizontal=400
 
-%.sym: %.src
-	@tragesym $< $@
+[geda_attr]
+version=20060113 1
+name=USB
+device=USBCONN_PADS
+refdes=CONN?
+footprint=usbconn_pads.fp
+description=Plain SMD pads USB connector
+documentation=http://en.wikipedia.org/wiki/Universal_Serial_Bus
+author=Uwe Hermann <uwe@hermann-uwe.de>
+dist-license=GPL
+use-license=unlimited
+numslots=0
+#slot=1
+#slotdef=1:
+#comment=
 
-lean:
-	@rm -f $(GENERATED_SYMBOLS)
+[pins]
+#pinnr	seq	type	style	posit.	net	label
+1		pwr	line	l		VCC
+2		io	line	l		D-
+3		io	line	l		D+
+4		pwr	line	l		GND
 
