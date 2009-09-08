@@ -2,8 +2,12 @@
 README
 ------------------------------------------------------------------------------
 
-The openlpcprog project aims to create Open Hardware and Free Software
-Low-Pin Count (LPC) BIOS chip programmer.
+The openbiosprog project aims to create an Open Hardware and Free Software
+BIOS chip programmer.
+
+The first version will support Low Pin Count (LPC) chips, later versions
+might add support for parallel flash chips and SPI chips.
+
 
 License
 -------
