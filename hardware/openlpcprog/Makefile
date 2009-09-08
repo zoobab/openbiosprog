@@ -1,5 +1,5 @@
 ##
-## This file is part of the openlpcprog project.
+## This file is part of the openbiosprog project.
 ##
 ## Copyright (C) 2009 Uwe Hermann <uwe@hermann-uwe.de>
 ##
@@ -18,8 +18,8 @@
 ## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 ##
 
-SCH = openlpcprog
-BOARD = openlpcprog_board
+SCH = openbiosprog
+BOARD = openbiosprog_board
 
 GEDADIR = $(HOME)/geda
 SCHEMEDIR = $(GEDADIR)/share/gEDA/scheme

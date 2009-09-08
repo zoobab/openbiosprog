@@ -1,7 +1,7 @@
 v 20090328 2
 C 40700 40200 0 0 0 title-bordered-A3.sym
 T 50200 41300 9 14 1 0 0 0 1
-openlpcprog
+openbiosprog
 T 55600 41300 9 10 1 0 0 0 1
 CC-BY-SA 3.0
 T 50100 40500 9 10 1 0 0 0 1
