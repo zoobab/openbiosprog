@@ -1,8 +1,8 @@
 v 20090328 2
 C 40700 40200 0 0 0 title-bordered-A3.sym
-T 50200 41300 9 14 1 0 0 0 1
+T 50200 41400 9 14 1 0 0 0 1
 openbiosprog
-T 55600 41300 9 10 1 0 0 0 1
+T 55600 41500 9 10 1 0 0 0 1
 CC-BY-SA 3.0
 T 50100 40500 9 10 1 0 0 0 1
 1
@@ -39,3 +39,5 @@ device=USBCONN_PADS
 T 53700 49100 5 10 0 0 0 0 1
 footprint=usbconn_pads.fp
 }
+T 53200 41200 9 10 1 0 0 0 1
+http://randomprojects.org/wiki/openbiosprog
