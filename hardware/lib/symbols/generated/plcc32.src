@@ -71,7 +71,9 @@ numslots=0
 17		io	line	r		LAD3
 23		io	line	r		LFRAME#
 2		io	line	r		RST#
+24		io	line	r		INIT#
 31		io	line	r		CLK
+29		io	line	r		IC
 32		io	line	r		VCC
 25		io	line	r		VCC
 16		io	line	r		GND
@@ -79,6 +81,4 @@ numslots=0
 
 7		io	line	b		WP#
 8		io	line	b		TBL#
-24		io	line	b		INIT#
-29		io	line	b		IC
 
