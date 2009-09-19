@@ -26,6 +26,6 @@ all: $(GENERATED_SYMBOLS)
 %.sym: %.src
 	@tragesym $< $@
 
-lean:
+clean:
 	@rm -f $(GENERATED_SYMBOLS)
 
