@@ -61,27 +61,27 @@ numslots=0
 11		pwr	line	l		PA1
 12		pwr	line	l		PA2
 13		pwr	line	l		PA3
-14		pwr	line	l		PA4
-15		pwr	line	l		PA5
-16		pwr	line	l		PA6
-17		pwr	line	l		PA7
+14		pwr	line	l		PA4 (SPI1_NSS)
+15		pwr	line	l		PA5 (SPI1_SCK)
+16		pwr	line	l		PA6 (SPI1_MISO)
+17		pwr	line	l		PA7 (SPI1_MOSI)
 
-29		pwr	line	l		PA8
-30		pwr	line	l		PA9
-31		pwr	line	l		PA10
-32		pwr	line	l		PA11
-33		pwr	line	l		PA12
-34		pwr	line	l		PA13
+29		pwr	line	l		PA8 (USART1_CK)
+30		pwr	line	l		PA9 (USART1_TX)
+31		pwr	line	l		PA10 (USART1_RX)
+32		pwr	line	l		PA11 (USART1_CTS)
+33		pwr	line	l		PA12 (USART1_RTS)
+34		pwr	line	l		PA13 (JTMS-SWDAT)
 
-37		pwr	line	l		PA14
-38		pwr	line	l		PA15
+37		pwr	line	l		PA14 (JTCK-SWCLK)
+38		pwr	line	l		PA15 (JTDI)
 
 18		pwr	line	r		PB0
 19		pwr	line	r		PB1
-20		pwr	line	r		PB2
+20		pwr	line	r		PB2 (BOOT1)
 
-39		pwr	line	r		PB3
-40		pwr	line	r		PB4
+39		pwr	line	r		PB3 (JTDO)
+40		pwr	line	r		PB4 (JTRST)
 41		pwr	line	r		PB5
 42		pwr	line	r		PB6
 43		pwr	line	r		PB7
