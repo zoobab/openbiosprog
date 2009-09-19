@@ -18,14 +18,41 @@
 ## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 ##
 
-GENERATED_SYMBOLS = stm32f103xx_lqfp48.sym usbconn_pads.sym plcc32.sym \
-		    le33c.sym
+[options]
+wordswap=yes
+rotate_labels=yes
+sort_labels=no
+generate_pinseq=yes
+sym_width=1200
+pinwidthvertical=200
+pinwidthhorizontal=200
 
-all: $(GENERATED_SYMBOLS)
+[geda_attr]
+version=20060113 1
+name=LE33C
+device=LE33C
+refdes=IC?
+footprint=SO8
+description=3.3V very low drop voltage regulator with inhibit from ST
+documentation=TODO
+author=Uwe Hermann <uwe@hermann-uwe.de>
+dist-license=GPL
+use-license=unlimited
+numslots=0
+#slot=1
+#slotdef=1:
+#comment=
 
-%.sym: %.src
-	@tragesym $< $@
+[pins]
+#pinnr	seq	type	style	posit.	net	label
 
-lean:
-	@rm -f $(GENERATED_SYMBOLS)
+1		pwr	line	l		VOUT
+2		pwr	line	l		GND
+3		pwr	line	l		GND
+4		io	line	l		NC
+
+8		pwr	line	r		VIN
+7		pwr	line	r		GND
+6		pwr	line	r		GND
+5		io	line	r		INHIBIT
 
