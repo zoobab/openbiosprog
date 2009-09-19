@@ -46,10 +46,6 @@ numslots=0
 [pins]
 #pinnr	seq	type	style	posit.	net	label
 
-9		io	line	l		RES
-10		io	line	l		RES
-11		io	line	l		RES
-12		io	line	l		RES
 18		io	line	l		RES
 19		io	line	l		RES
 20		io	line	l		RES
@@ -58,27 +54,32 @@ numslots=0
 22		io	line	l		NC
 26		io	line	l		NC
 27		io	line	l		NC
+6		io	line	l		GPI0
+5		io	line	l		GPI1
+4		io	line	l		GPI2
+3		io	line	l		GPI3
+30		io	line	l		GPI4
+7		io	line	l		WP#
+8		io	line	l		TBL#
 
-6		io	line	t		GPI0
-5		io	line	t		GPI1
-4		io	line	t		GPI2
-3		io	line	t		GPI3
-30		io	line	t		GPI4
-
-13		io	line	r		LAD0
-14		io	line	r		LAD1
-15		io	line	r		LAD2
-17		io	line	r		LAD3
-23		io	line	r		LFRAME#
+13		io	line	r		LAD0 (FWH0)
+14		io	line	r		LAD1 (FWH1)
+15		io	line	r		LAD2 (FWH2)
+17		io	line	r		LAD3 (FWH3)
+23		io	line	r		LFRAME# (FWH4)
 2		io	line	r		RST#
 24		io	line	r		INIT#
 31		io	line	r		CLK
 29		io	line	r		IC
+9		io	line	r		RES (ID3)
+10		io	line	r		RES (ID2)
+11		io	line	r		RES (ID1)
+12		io	line	r		RES (ID0)
+
+			spacer	r
+
 32		io	line	r		VCC
 25		io	line	r		VCC
 16		io	line	r		GND
 28		io	line	r		GND
-
-7		io	line	b		WP#
-8		io	line	b		TBL#
 
