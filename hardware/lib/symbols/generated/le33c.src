@@ -46,13 +46,20 @@ numslots=0
 [pins]
 #pinnr	seq	type	style	posit.	net	label
 
-1		pwr	line	l		VOUT
-2		pwr	line	l		GND
-3		pwr	line	l		GND
-4		io	line	l		NC
+8		pwr	line	l		VIN
 
-8		pwr	line	r		VIN
-7		pwr	line	r		GND
-6		pwr	line	r		GND
-5		io	line	r		INHIBIT
+			spacer	l
+			spacer	l
+			spacer	l
+			spacer	l
+
+1		pwr	line	r		VOUT
+
+4		io	line	t		NC
+
+5		io	line	b		INHIBIT
+2		pwr	line	b		GND
+3		pwr	line	b		GND
+7		pwr	line	b		GND
+6		pwr	line	b		GND
 
