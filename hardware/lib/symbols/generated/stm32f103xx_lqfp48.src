@@ -71,7 +71,7 @@ numslots=0
 31		pwr	line	l		PA10 (USART1_RX)
 32		pwr	line	l		PA11 (USART1_CTS)
 33		pwr	line	l		PA12 (USART1_RTS)
-34		pwr	line	l		PA13 (JTMS-SWDAT)
+34		pwr	line	l		PA13 (JTMS-SWDIO)
 
 37		pwr	line	l		PA14 (JTCK-SWCLK)
 38		pwr	line	l		PA15 (JTDI)
