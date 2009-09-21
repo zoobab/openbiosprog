@@ -2,7 +2,7 @@ v 20090328 2
 C 40700 40200 0 0 0 title-bordered-A3.sym
 T 50200 41400 9 14 1 0 0 0 1
 openbiosprog
-T 55600 41500 9 10 1 0 0 0 1
+T 55600 41550 9 10 1 0 0 0 1
 CC-BY-SA 3.0
 T 50100 40500 9 10 1 0 0 0 1
 1
@@ -21,7 +21,7 @@ device=USBCONN_PADS
 T 56200 48900 5 10 0 0 0 0 1
 footprint=usbconn_pads.fp
 }
-T 53200 41200 9 10 1 0 0 0 1
+T 53250 41350 9 10 1 0 0 0 1
 http://randomprojects.org/wiki/openbiosprog
 C 41400 46500 1 0 0 nc-bottom-1.sym
 {
@@ -398,3 +398,5 @@ netname=USB_D+
 C 47250 49300 1 0 0 3.3V-plus-1.sym
 N 47600 49100 47450 49100 4
 N 47450 49100 47450 49300 4
+T 52500 41100 9 8 1 0 0 0 1
+Schematics and layouts created with gEDA/PCB (http://gpleda.org)
