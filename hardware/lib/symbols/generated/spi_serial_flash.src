@@ -18,14 +18,40 @@
 ## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 ##
 
-GENERATED_SYMBOLS = stm32f103xx_lqfp48.sym usbconn_pads.sym plcc32.sym \
-		    le33c.sym vreg_3v3.sym spi_serial_flash.sym
+[options]
+wordswap=yes
+rotate_labels=no
+sort_labels=no
+generate_pinseq=yes
+sym_width=1200
+pinwidthvertical=200
+pinwidthhorizontal=200
 
-all: $(GENERATED_SYMBOLS)
+[geda_attr]
+version=20060113 1
+name=SPI chip socket
+device=SPI_SERIAL_FLASH
+refdes=IC?
+footprint=SO8
+description=Generic 8-pin serial flash socket as used for SPI PC BIOS chips
+documentation=TODO
+author=Uwe Hermann <uwe@hermann-uwe.de>
+dist-license=GPL
+use-license=unlimited
+numslots=0
+#slot=1
+#slotdef=1:
+#comment=
 
-%.sym: %.src
-	@tragesym $< $@
+[pins]
+#pinnr	seq	type	style	posit.	net	label
+1		io	line	l		CS#
+2		out	line	l		SO
+3		in	line	l		WP#
+4		pwr	line	l		GND
 
-clean:
-	@rm -f $(GENERATED_SYMBOLS)
+8		pwr	line	r		VCC
+7		io	line	r		HOLD#
+6		clk	line	r		SCLK
+5		in	line	r		SI
 
