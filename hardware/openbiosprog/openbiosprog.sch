@@ -12,13 +12,13 @@ T 53900 40500 9 8 1 0 0 0 1
 Uwe Hermann <uwe@hermann-uwe.de>
 T 53900 40800 9 10 1 0 0 0 1
 0.1
-C 54000 46600 1 0 0 usbconn_pads.sym
+C 55500 46700 1 0 0 usbconn_pads.sym
 {
-T 55000 46400 5 10 1 1 0 6 1
+T 56500 46500 5 10 1 1 0 6 1
 refdes=CONN?
-T 54400 48000 5 10 0 0 0 0 1
+T 55900 48100 5 10 0 0 0 0 1
 device=USBCONN_PADS
-T 54400 48200 5 10 0 0 0 0 1
+T 55900 48300 5 10 0 0 0 0 1
 footprint=usbconn_pads.fp
 }
 T 53200 41200 9 10 1 0 0 0 1
@@ -166,4 +166,40 @@ N 49200 44500 48100 44500 4
 {
 T 48200 44500 5 10 1 1 0 0 1
 netname=TDI
+}
+C 53800 47800 1 0 0 vreg_3v3.sym
+{
+T 55400 48400 5 10 1 1 0 6 1
+refdes=IC?
+T 54200 49100 5 10 0 0 0 0 1
+device=VOLTAGE_REGULATOR_3V3
+T 54200 49300 5 10 0 0 0 0 1
+footprint=TODO
+}
+C 54500 46100 1 0 0 capacitor-1.sym
+{
+T 54700 46800 5 10 0 0 0 0 1
+device=CAPACITOR
+T 54700 46600 5 10 1 1 0 0 1
+refdes=C?
+T 54700 47000 5 10 0 0 0 0 1
+symversion=0.1
+}
+C 53200 46700 1 0 0 capacitor-1.sym
+{
+T 53400 47400 5 10 0 0 0 0 1
+device=CAPACITOR
+T 53400 47200 5 10 1 1 0 0 1
+refdes=C?
+T 53400 47600 5 10 0 0 0 0 1
+symversion=0.1
+}
+C 43300 49400 1 0 0 spi_serial_flash.sym
+{
+T 44500 49300 5 10 1 1 0 6 1
+refdes=IC?
+T 43700 50800 5 10 0 0 0 0 1
+device=SPI_SERIAL_FLASH
+T 43700 51000 5 10 0 0 0 0 1
+footprint=SO8
 }
