@@ -18,14 +18,37 @@
 ## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 ##
 
-GENERATED_SYMBOLS = stm32f103xx_lqfp48.sym usbconn_pads.sym plcc32.sym \
-		    le33c.sym vreg_3v3.sym
+[options]
+wordswap=yes
+rotate_labels=yes
+sort_labels=no
+generate_pinseq=yes
+sym_width=800
+pinwidthvertical=200
+pinwidthhorizontal=200
 
-all: $(GENERATED_SYMBOLS)
+[geda_attr]
+version=20060113 1
+name=vreg 3.3V
+device=VOLTAGE_REGULATOR_3V3
+refdes=IC?
+footprint=TODO
+description=3.3V voltage regulator
+documentation=TODO
+author=Uwe Hermann <uwe@hermann-uwe.de>
+dist-license=GPL
+use-license=unlimited
+numslots=0
+#slot=1
+#slotdef=1:
+#comment=
 
-%.sym: %.src
-	@tragesym $< $@
+[pins]
+#pinnr	seq	type	style	posit.	net	label
+1		pwr	line	b		GND
+2		pwr	line	b		VOUT
+3		pwr	line	b		VIN
 
-clean:
-	@rm -f $(GENERATED_SYMBOLS)
+			spacer	l
+			spacer	l
 
