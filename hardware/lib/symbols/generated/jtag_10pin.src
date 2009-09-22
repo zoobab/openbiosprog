@@ -18,14 +18,41 @@
 ## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 ##
 
-GENERATED_SYMBOLS = stm32f103xx_lqfp48.sym usbconn_pads.sym plcc32.sym \
-		    le33c.sym vreg_3v3.sym spi_serial_flash.sym jtag_10pin.sym
+[options]
+wordswap=yes
+rotate_labels=no
+sort_labels=no
+generate_pinseq=yes
+sym_width=500
+pinwidthvertical=200
+pinwidthhorizontal=200
 
-all: $(GENERATED_SYMBOLS)
+[geda_attr]
+version=20060113 1
+name=JTAG
+device=JTAG_10PIN
+refdes=CONN?
+footprint=TODO
+description=Standard 10pin JTAG connector
+documentation=None
+author=Uwe Hermann <uwe@hermann-uwe.de>
+dist-license=GPL
+use-license=unlimited
+numslots=0
+#slot=1
+#slotdef=1:
+#comment=
 
-%.sym: %.src
-	@tragesym $< $@
-
-clean:
-	@rm -f $(GENERATED_SYMBOLS)
+[pins]
+#pinnr	seq	type	style	posit.	net	label	
+10		io	line	l		10
+8		io	line	l		8
+6		io	line	l		6
+4		io	line	l		4
+2		io	line	l		2
+9		io	line	r		9
+7		io	line	r		7
+5		io	line	r		5
+3		io	line	r		3
+1		io	line	r		1
 
