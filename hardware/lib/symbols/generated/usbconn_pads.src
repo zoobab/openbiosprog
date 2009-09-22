@@ -18,8 +18,6 @@
 ## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 ##
 
-# Template file for creating symbols with tragesym.
-
 [options]
 wordswap=yes
 rotate_labels=no

@@ -18,14 +18,12 @@
 ## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 ##
 
-# Template file for creating symbols with tragesym.
-
 [options]
 wordswap=yes
 rotate_labels=no
 sort_labels=no
 generate_pinseq=yes
-sym_width=2500
+sym_width=2800
 pinwidthvertical=200
 pinwidthhorizontal=200
 
@@ -51,41 +49,41 @@ numslots=0
 2		io	line	l		PC13-TAMPER-RTC
 3		io	line	l		PC14-OSC32_IN
 4		io	line	l		PC15-OSC32_OUT
-5		io	line	l		PD0-OSC_IN
-6		io	line	l		PD1-OSC_OUT
+5		in	line	l		PD0-OSC_IN
+6		out	line	l		PD1-OSC_OUT
 7		io	line	l		NRST
-8		io	line	l		VSSA
-9		io	line	l		VDDA
+8		pwr	line	l		VSSA
+9		pwr	line	l		VDDA
 
-10		pwr	line	l		PA0-WKUP
-11		pwr	line	l		PA1
-12		pwr	line	l		PA2
-13		pwr	line	l		PA3
-14		pwr	line	l		PA4 (SPI1_NSS)
-15		pwr	line	l		PA5 (SPI1_SCK)
-16		pwr	line	l		PA6 (SPI1_MISO)
-17		pwr	line	l		PA7 (SPI1_MOSI)
+10		io	line	l		PA0-WKUP
+11		io	line	l		PA1
+12		io	line	l		PA2
+13		io	line	l		PA3
+14		io	line	l		PA4 (SPI1_NSS)
+15		io	line	l		PA5 (SPI1_SCK)
+16		io	line	l		PA6 (SPI1_MISO)
+17		io	line	l		PA7 (SPI1_MOSI)
 
-29		pwr	line	l		PA8 (USART1_CK)
-30		pwr	line	l		PA9 (USART1_TX)
-31		pwr	line	l		PA10 (USART1_RX)
-32		pwr	line	l		PA11 (USART1_CTS)
-33		pwr	line	l		PA12 (USART1_RTS)
+29		io	line	l		PA8 (USART1_CK)
+30		io	line	l		PA9 (USART1_TX)
+31		io	line	l		PA10 (USART1_RX)
+32		io	line	l		PA11 (USART1_CTS / USBDM)
+33		io	line	l		PA12 (USART1_RTS / USBDP)
 34		in	line	l		PA13 (JTMS-SWDIO)
 
 37		in	line	l		PA14 (JTCK-SWCLK)
 38		in	line	l		PA15 (JTDI)
 
-18		pwr	line	r		PB0
-19		pwr	line	r		PB1
-20		pwr	line	r		PB2 (BOOT1)
+18		io	line	r		PB0
+19		io	line	r		PB1
+20		io	line	r		PB2 (BOOT1)
 
 39		out	line	r		PB3 (JTDO)
 40		in	line	r		PB4 (JTRST)
-41		pwr	line	r		PB5
-42		pwr	line	r		PB6
-43		pwr	line	r		PB7
-44		pwr	line	r		BOOT0
+41		io	line	r		PB5
+42		io	line	r		PB6
+43		io	line	r		PB7
+44		in	line	r		BOOT0
 
 48		pwr	line	r		VDD_3
 36		pwr	line	r		VDD_2
@@ -94,13 +92,13 @@ numslots=0
 35		pwr	line	r		VSS_2
 47		pwr	line	r		VSS_3
 
-45		pwr	line	r		PB8
-46		pwr	line	r		PB9
+45		io	line	r		PB8
+46		io	line	r		PB9
 
-21		pwr	line	r		PB10
-22		pwr	line	r		PB11
-25		pwr	line	r		PB12
-26		pwr	line	r		PB13
-27		pwr	line	r		PB14
-28		pwr	line	r		PB15
+21		io	line	r		PB10
+22		io	line	r		PB11
+25		io	line	r		PB12
+26		io	line	r		PB13
+27		io	line	r		PB14
+28		io	line	r		PB15
 
