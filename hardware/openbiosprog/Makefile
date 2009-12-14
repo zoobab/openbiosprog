@@ -19,7 +19,7 @@
 ##
 
 SCH = openbiosprog
-BOARD = openbiosprog_board
+BOARD = openbiosprog-board
 
 GEDADIR = $(HOME)/geda
 SCHEMEDIR = $(GEDADIR)/share/gEDA/scheme
@@ -40,27 +40,27 @@ symbols:
 
 $(SCH).sch: symbols
 
-updatepcb: symbols
+updatepcb: $(SCH).sch gsch2pcb.cfg
 	$(Q)gsch2pcb gsch2pcb.cfg $(G)
 
-sch-ps:
+sch-ps: $(SCH).sch
 	@# This must be done in an X11 session, doesn't work on console.
 	$(Q)gschem -q -p -o $(SCH).ps -s $(SCHEMEDIR)/print.scm $(SCH).sch $(G)
 
-sch-pdf:
+sch-pdf: sch-ps
 	$(Q)ps2pdf -sPAPERSIZE=a4 $(SCH).ps $(G)
 
-pcb-gerber:
+pcb-gerber: $(BOARD).pcb
 	$(Q)pcb -x gerber --all-layers --gerberfile $(BOARD) $(BOARD).pcb $(G)
 
-pcb-ps:
+pcb-ps: $(BOARD).pcb
 	$(Q)pcb -x ps --ps-color --media A4 --drill-helper --drill-copper \
 	        --align-marks --psfile $(BOARD).ps $(BOARD).pcb $(G)
 
-pcb-png:
+pcb-png: $(BOARD).pcb
 	$(Q)pcb -x png --dpi 300 --outfile $(BOARD).png $(BOARD).pcb $(G)
 
-pcb-photo:
+pcb-photo: $(BOARD).pcb
 	$(Q)pcb -x png --dpi 300 --photo-mode \
 	    --outfile $(BOARD)_photo_top.png $(BOARD).pcb $(G)
 	$(Q)pcb -x png --dpi 300 --photo-mode --photo-flip-y \
@@ -71,12 +71,12 @@ drc: $(SCH).sch
 	@# Use this line to always print DRC output to stdout.
 	@# $(Q)gnetlist -g drc2 -q $(SCH).sch -o - $(G)
 
-bom:
+bom: $(SCH).sch
 	$(Q)gnetlist -q -g partslist3 -o $(SCH).bom $(SCH).sch
 	@# The below 'bom2' also needs an 'attribs' file as input.
-	@# gnetlist -g bom2 -o $(SCH).bom $(SCH).sch 
+	@# gnetlist -g bom2 -o $(SCH).bom $(SCH).sch
 
-panel:
+panel: $(BOARD).pcb gerbmerge.cfg gerbmerge.def
 	$(Q)echo "y" | gerbmerge gerbmerge.cfg gerbmerge.def
 
 clean:
