@@ -58,12 +58,12 @@ pcb-ps: $(BOARD).pcb
 	        --align-marks --psfile $(BOARD).ps $(BOARD).pcb $(G)
 
 pcb-png: $(BOARD).pcb
-	$(Q)pcb -x png --dpi 300 --outfile $(BOARD).png $(BOARD).pcb $(G)
+	$(Q)pcb -x png --dpi 900 --outfile $(BOARD).png $(BOARD).pcb $(G)
 
 pcb-photo: $(BOARD).pcb
-	$(Q)pcb -x png --dpi 300 --photo-mode \
+	$(Q)pcb -x png --dpi 900 --photo-mode --only-visible \
 	    --outfile $(BOARD)_photo_top.png $(BOARD).pcb $(G)
-	$(Q)pcb -x png --dpi 300 --photo-mode --photo-flip-y \
+	$(Q)pcb -x png --dpi 900 --photo-mode --photo-flip-y --only-visible \
 	    --outfile $(BOARD)_photo_bottom.png $(BOARD).pcb $(G)
 
 drc: $(SCH).sch
