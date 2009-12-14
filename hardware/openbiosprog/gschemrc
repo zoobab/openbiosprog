@@ -18,6 +18,8 @@
 ;; Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 ;;
 
+;; This is the config file for gschem.
+
 ;; Force use of A4 paper size for exported PS/PDF schematics.
 (paper-size 11.69 8.27) ; A4
 
