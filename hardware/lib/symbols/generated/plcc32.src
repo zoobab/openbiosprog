@@ -23,7 +23,7 @@ wordswap=yes
 rotate_labels=yes
 sort_labels=no
 generate_pinseq=yes
-sym_width=2000
+sym_width=2800
 pinwidthvertical=200
 pinwidthhorizontal=200
 
@@ -46,6 +46,11 @@ numslots=0
 [pins]
 #pinnr	seq	type	style	posit.	net	label
 
+7		io	line	l		WP#
+8		io	line	l		TBL#
+
+			spacer	l
+
 18		io	line	l		RES
 19		io	line	l		RES
 20		io	line	l		RES
@@ -54,13 +59,14 @@ numslots=0
 22		io	line	l		NC
 26		io	line	l		NC
 27		io	line	l		NC
-6		io	line	l		GPI0
-5		io	line	l		GPI1
-4		io	line	l		GPI2
-3		io	line	l		GPI3
-30		io	line	l		GPI4
-7		io	line	l		WP#
-8		io	line	l		TBL#
+
+			spacer	l
+			spacer	l
+
+32		io	line	r		VCC
+25		io	line	r		VCC
+
+			spacer	r
 
 13		io	line	r		LAD0 (FWH0)
 14		io	line	r		LAD1 (FWH1)
@@ -70,16 +76,20 @@ numslots=0
 2		io	line	r		RST#
 24		io	line	r		INIT#
 31		io	line	r		CLK
-29		io	line	r		IC
-9		io	line	r		RES (ID3)
-10		io	line	r		RES (ID2)
-11		io	line	r		RES (ID1)
-12		io	line	r		RES (ID0)
 
 			spacer	r
+			spacer	r
 
-32		io	line	r		VCC
-25		io	line	r		VCC
-16		io	line	r		GND
-28		io	line	r		GND
+6		io	line	b		GPI0
+5		io	line	b		GPI1
+4		io	line	b		GPI2
+3		io	line	b		GPI3
+30		io	line	b		GPI4
+29		io	line	b		IC
+9		io	line	b		RES (ID3)
+10		io	line	b		RES (ID2)
+11		io	line	b		RES (ID1)
+12		io	line	b		RES (ID0)
+16		io	line	b		GND
+28		io	line	b		GND
 
